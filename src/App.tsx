@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 interface Officer {
   id: number;
@@ -127,7 +127,7 @@ const App = () => {
     const remainingDays = Math.ceil((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
     setDaysLeft(remainingDays);
 
-    // TODO: Add notification/reminder logic here for upcoming deadlines
+   
   }, []);
 
   const handleSubmit = (id: number) => {
